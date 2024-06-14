@@ -1,0 +1,6 @@
+@EducaInvestAPI_HostAddress = http://localhost:5115
+
+GET {{EducaInvestAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
