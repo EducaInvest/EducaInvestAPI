@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EducaInvestAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b34a09602311cd3a8cd6bdefc765a533c78a5a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("EducaInvestAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EducaInvestAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

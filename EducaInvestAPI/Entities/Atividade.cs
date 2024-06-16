@@ -15,6 +15,6 @@ namespace EducaInvestAPI.Entities
         public decimal Percentual { get; set; }
         public int CronogramaId { get; set; }
         [JsonIgnore]
-        public Cronograma Cronograma { get; set; }
+        public Cronograma? Cronograma { get; set; }
     }
 }

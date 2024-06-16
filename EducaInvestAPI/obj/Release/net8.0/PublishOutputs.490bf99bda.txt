@@ -1,11 +1,6 @@
 D:\EducaInvestAPI\EducaInvestAPI\publish\EducaInvestAPI.exe
-D:\EducaInvestAPI\EducaInvestAPI\publish\publish\web.config
 D:\EducaInvestAPI\EducaInvestAPI\publish\appsettings.Development.json
 D:\EducaInvestAPI\EducaInvestAPI\publish\appsettings.json
-D:\EducaInvestAPI\EducaInvestAPI\publish\publish\appsettings.Development.json
-D:\EducaInvestAPI\EducaInvestAPI\publish\publish\appsettings.json
-D:\EducaInvestAPI\EducaInvestAPI\publish\publish\EducaInvestAPI.deps.json
-D:\EducaInvestAPI\EducaInvestAPI\publish\publish\EducaInvestAPI.runtimeconfig.json
 D:\EducaInvestAPI\EducaInvestAPI\publish\EducaInvestAPI.dll
 D:\EducaInvestAPI\EducaInvestAPI\publish\EducaInvestAPI.runtimeconfig.json
 D:\EducaInvestAPI\EducaInvestAPI\publish\EducaInvestAPI.pdb

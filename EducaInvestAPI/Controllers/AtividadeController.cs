@@ -29,7 +29,7 @@ namespace EducaInvestAPI.Controllers
         {
             var atividade = await _context.TB_ATIVIDADES.FindAsync(id);
             if (atividade is null)
-                return NotFound("Esta atividade não existe.");
+                return NotFound("Atividade não encontrada.");
 
             return Ok(atividade);
         }
@@ -49,7 +49,7 @@ namespace EducaInvestAPI.Controllers
         {
             var tbAtividade = await _context.TB_ATIVIDADES.FindAsync(updatedAtividade.Id);
             if (tbAtividade is null)
-                return NotFound("Esta atividade não existe.");
+                return NotFound("Atividade não encontrada.");
 
             tbAtividade.DescricaoAtividade = updatedAtividade.DescricaoAtividade;
             tbAtividade.StatusAtividade = updatedAtividade.StatusAtividade;
@@ -60,7 +60,7 @@ namespace EducaInvestAPI.Controllers
             _context.TB_ATIVIDADES.Update(tbAtividade);
             await _context.SaveChangesAsync();
 
-            return Ok(tbAtividade);
+            return Ok("Atividade atualizada.");
         }
 
         [HttpDelete]

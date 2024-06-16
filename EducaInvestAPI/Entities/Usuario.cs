@@ -26,7 +26,7 @@ namespace EducaInvestAPI.Entities
         public EstadoEnum UF { get; set; }
         public DateTime? DataAcesso { get; set; }
         [JsonIgnore]
-        public List<byte[]> FileBytes { get; set; } = null;
+        public List<byte[]>? FileBytes { get; set; } = null;
         [JsonIgnore]
         public byte[]? PasswordHash { get; set; }
         [JsonIgnore]
@@ -35,7 +35,7 @@ namespace EducaInvestAPI.Entities
         [NotMapped]
         public string PasswordString { get; set; } = string.Empty;
         [JsonIgnore]
-        public List<Projeto> Projetos { get; set; }
+        public List<Projeto>? Projetos { get; set; }
 
     }
 }

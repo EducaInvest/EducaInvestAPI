@@ -20,7 +20,8 @@ namespace EducaInvestAPI.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=educainvestapi.database.windows.net;Database=DB-EDUCAINVEST;User Id=nathalli;Password=EIdb2024#;",
+            //EIdb2024#;
+            optionsBuilder.UseSqlServer("Server=educainvestapi.database.windows.net;Database=DB-EDUCAINVEST;User Id=nathalli;Password={senha};",
                 options => options.EnableRetryOnFailure());
         }
 

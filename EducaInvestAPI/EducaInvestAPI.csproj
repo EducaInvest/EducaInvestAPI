@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>disable</Nullable>
+    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationInsightsResourceId>/subscriptions/b782c935-e26e-4377-ba72-433907c041e1/resourceGroups/TCC/providers/microsoft.insights/components/educainvest</ApplicationInsightsResourceId>
     <UserSecretsId>bfea9f83-292a-4eb8-8da2-127114f87baa</UserSecretsId>

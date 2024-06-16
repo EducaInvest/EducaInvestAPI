@@ -20,11 +20,11 @@ namespace EducaInvestAPI.Entities
         public int UsuarioId { get; set; }
         public int CronogramaId { get; set; }
         [JsonIgnore]
-        public List<byte[]> FileBytes { get; set; } = null;
+        public List<byte[]>? FileBytes { get; set; } = null;
         [JsonIgnore]
-        public Usuario Usuario { get; set; }
+        public Usuario? Usuario { get; set; }
         [JsonIgnore]
-        public Cronograma Cronograma { get; set; }
+        public Cronograma? Cronograma { get; set; }
 
     }
 }

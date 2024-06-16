@@ -4,6 +4,8 @@ using EducaInvestAPI.Entities.Enums;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace EducaInvestAPI.Controllers
 {
@@ -26,9 +28,9 @@ namespace EducaInvestAPI.Controllers
                 var projetos = await _context.TB_PROJETOS.ToListAsync();
                 return Ok(projetos);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return BadRequest(ex.Message);
+                return BadRequest("Ocorreu um erro ao tentar acessar seus projetos.Por favor, tente novamente mais tarde.");
             }
         }
 
@@ -43,9 +45,9 @@ namespace EducaInvestAPI.Controllers
 
                 return Ok(projeto);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return BadRequest(ex.Message);
+                return BadRequest("Ocorreu um erro ao tentar recuperar os detalhes do projeto.Por favor, tente novamente mais tarde.");
             }
         }
 
@@ -77,9 +79,9 @@ namespace EducaInvestAPI.Controllers
 
                 return Ok(lista);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return BadRequest(ex.Message);
+                return BadRequest("Ocorreu um erro ao tentar recuperar os projetos. Por favor, tente novamente mais tarde.");
             }
         }
 
@@ -104,9 +106,9 @@ namespace EducaInvestAPI.Controllers
 
                 return Ok(await _context.TB_PROJETOS.ToListAsync());
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return BadRequest(ex.Message);
+                return BadRequest("Houve um problema ao adicionar o projeto. Por favor, verifique os dados e tente novamente.");
             }
         }
 
@@ -165,9 +167,9 @@ namespace EducaInvestAPI.Controllers
 
                 return Ok(tbProjeto);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return BadRequest(ex.Message);
+                return BadRequest("Ocorreu um erro ao tentar atualizar o projeto. Por favor, tente novamente mais tarde.");
             }
         }
 
@@ -185,9 +187,9 @@ namespace EducaInvestAPI.Controllers
 
                 return Ok(await _context.TB_PROJETOS.ToListAsync());
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return BadRequest(ex.Message);
+                return BadRequest("Ocorreu um erro ao tentar excluir o projeto. Por favor, tente novamente mais tarde.");
             }
         }
     }
